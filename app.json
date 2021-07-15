@@ -4,91 +4,91 @@
     "keywords": ["heroku yes"],
     "env": {
         "AA": {
-            "description": "初阶用户只需填写App name后按需修改以下APASSWORD和AUUID两项后点击页面最后的Deploy app按钮即可开始部署",
-            "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含义"
+            "description": "Beginner users only need to fill in the App name, modify the following APASSWORD and AUUID as needed, and click the Deploy app button at the end of the page to start deployment",
+            "value": "If there is an error, please check the parameter format or try several times. When using a custom parameter, please fully understand its meaning first."
         },
         "APASSWORD": {
-            "description": "SS|BROOK|GOST|TROJAN使用的密码",
+            "description": "Kata sandi untuk => SS|BROOK|GOST|TROJAN",
             "value": "password"
         },
         "TOREnable": {
-            "description": "TOR开关，默认关闭，修改为true时候启用",
+            "description": "Aktifkan TOR, default nonaktif, diaktifkan apabila value true",
             "value": "false"
         },
         "CADDYIndexPage": {
-            "description": "自定义CADDY部署完成后点击View的显示页面，参考：https://github.com/mixool/kuhero/blob/master/etc/CADDYIndexPage.md",
+            "description": "Setelah penyesuaian CADDY deployment completed, click on the display page of View, refer to: https://github.com/mixool/kuhero/blob/master/etc/CADDYIndexPage.md",
             "value": "https://raw.githubusercontent.com/caddyserver/dist/master/welcome/index.html"
         },
         "CADDYCONFIG": {
-            "description": "自定义网络地址读取配置运行CADDY，不熟悉CADDY配置的请勿修改",
+            "description": "Customize the network address to read the configuration and run CADDY, please do not modify it if you are not familiar with the CADDY configuration",
             "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/Caddyfile"
         },
         "ROBOTS": {
-            "description": "ROBOTS爬虫规则开关，默认开启，修改为false时候关闭",
-            "value": "true"
+            "description": "The ROBOTS crawler rule switch, enabled by default, closed when modified to false",
+            "value": "false"
         },
         "ROBOTSCONFIG": {
-            "description": "自定义ROBOTS爬虫配置，默认配置禁止所有爬虫",
+            "description": "Customize ROBOTS crawler configuration, the default configuration prohibits all crawlers",
             "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/robots.txt"
         },
         "SSEnable": {
-            "description": "SS开关，默认启用，修改为false时关闭",
+            "description": "SS switch, enabled by default, closed when modified to false",
             "value": "true"
         },
         "SSENCYPT": {
-            "description": "SS加密方式",
+            "description": "SS encryption method",
             "value": "chacha20-ietf-poly1305"
         },
         "SSPATH": {
-            "description": "SS路径",
-            "value": "/sspath"
+            "description": "SS Path",
+            "value": "/ss"
         },
         "GOSTEnable": {
-            "description": "GOST开关，默认启用，修改为false时关闭",
+            "description": "GOST switch, enabled by default, closed when modified to false",
             "value": "true"
         },
         "GOSTPATH": {
-            "description": "GOST路径",
-            "value": "/gostpath"
+            "description": "GOST Path",
+            "value": "/gost"
         },
         "GOSTMETHOD": {
-            "description": "自定义GOST运行参数，不熟悉GOST配置的请勿修改",
+            "description": "Customize GOST operating parameters, please do not modify if you are not familiar with GOST configuration",
             "value": "-L=ss+ws://AEAD_CHACHA20_POLY1305:$APASSWORD@127.0.0.1:2234?path=$GOSTPATH"
         },
         "BROOKEnable": {
-            "description": "BROOK开关，默认启用，修改为false时关闭",
+            "description": "BROOK switch, enabled by default, closed when modified to false",
             "value": "true"
         },
         "BROOKPATH": {
-            "description": "BROOK路径",
-            "value": "/brookpath"
+            "description": "BROOK Path",
+            "value": "/brook"
         },
         "V2RAYEnable": {
-            "description": "V2RAY开关，默认启用，修改为false时关闭",
+            "description": "V2RAY switch, enabled by default, closed when modified to false",
             "value": "true"
         },
         "VMESSPATH": {
-            "description": "V2RAY使用VMESS时的路径",
-            "value": "/vmesspath"
+            "description": "The path when V2RAY uses VMESS",
+            "value": "/vmess"
         },
         "VLESSPATH": {
-            "description": "V2RAY使用VLESS时的路径",
-            "value": "/vlesspath"
+            "description": "The path when V2RAY uses VLESS",
+            "value": "/vless"
         },
-		"TROJANPATH": {
-            "description": "V2RAY使用TROJAN时的路径",
-            "value": "/trojanpath"
+	"TROJANPATH": {
+            "description": "The path when V2RAY uses TROJAN",
+            "value": "/trojangobs"
         },
         "AUUID": {
-            "description": "V2RAY使用的UUID,可生成UUID的网站: https://www.uuidgenerator.net",
-            "value": "8f91b6a0-e8ee-11ea-adc1-0242ac120002"
+            "description": "UUID used by V2RAY, a website that can generate UUID: https://www.uuidgenerator.net",
+            "value": "c8e7df11-4ac6-40c6-a6fb-403da0b394de"
         },
         "V2RAYCONFIG": {
-            "description": "自定义网络地址读取配置运行V2RAY，不熟悉V2RAY配置的请勿修改",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/v2ray.json"
+            "description": "Customize the network address to read the configuration and run V2RAY, please do not modify it if you are not familiar with the V2RAY configuration",
+            "value": "https://raw.githubusercontent.com/euedeep/heroku-v2ray-trojan-go/master/etc/v2ray.json"
         }
     },
-    "website": "https://github.com/mixool/kuhero",
-    "repository": "https://github.com/mixool/kuhero",
+    "website": "https://github.com/euedeep/heroku-v2ray-trojan-go",
+    "repository": "https://github.com/euedeep/heroku-v2ray-trojan-go",
     "stack": "container"
 }
