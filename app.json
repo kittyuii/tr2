@@ -85,10 +85,10 @@
         },
         "V2RAYCONFIG": {
             "description": "Customize the network address to read the configuration and run V2RAY, please do not modify it if you are not familiar with the V2RAY configuration",
-            "value": "https://raw.githubusercontent.com/euedeep/heroku-v2ray-trojan-go/master/etc/v2ray.json"
+            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/v2ray.json"
         }
     },
-    "website": "https://github.com/euedeep/heroku-v2ray-trojan-go",
-    "repository": "https://github.com/euedeep/heroku-v2ray-trojan-go",
+    "website": "https://github.com/euedeep/ukoreh-v2ray-trojan-gobs",
+    "repository": "https://github.com/euedeep/ukoreh-v2ray-trojan-gobs",
     "stack": "container"
 }
