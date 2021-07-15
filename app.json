@@ -25,11 +25,11 @@
         },
         "ROBOTS": {
             "description": "The ROBOTS crawler rule switch, enabled by default, closed when modified to false",
-            "value": "false"
+            "value": "true"
         },
         "ROBOTSCONFIG": {
             "description": "Customize ROBOTS crawler configuration, the default configuration prohibits all crawlers",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/robots.txt"
+            "value": "https://raw.githubusercontent.com/euedeep/ukoreh-v2ray-trojan-gobs/master/etc/robots.txt"
         },
         "SSEnable": {
             "description": "SS switch, enabled by default, closed when modified to false",
