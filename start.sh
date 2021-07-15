@@ -6,7 +6,7 @@ unzip -qo /usr/share/caddy/index.html -d /usr/share/caddy/ && mv /usr/share/cadd
 [[ "$ROBOTS" == "true" ]] && wget -qO- $ROBOTSCONFIG >/usr/share/caddy/robots.txt
 wget -qO- $CADDYCONFIG | sed -e "1c :$PORT" -e "s/\$SSPATH$/\\$SSPATH/" -e "s/\$GOSTPATH$/\\$GOSTPATH/" -e "s/\$BROOKPATH$/\\$BROOKPATH/" -e "s/\$VMESSPATH$/\\$VMESSPATH/" -e "s/\$VLESSPATH$/\\$VLESSPATH/" -e "s/\$TROJANPATH$/\\$TROJANPATH/" >/etc/caddy/Caddyfile
 wget -qO- $V2RAYCONFIG | sed -e "s/\$AUUID/$AUUID/g" -e "s/\$APASSWORD/$APASSWORD/g" -e "s/\$VMESSPATH/\\$VMESSPATH/" -e "s/\$VLESSPATH/\\$VLESSPATH/" -e "s/\$TROJANPATH/\\$TROJANPATH/" >/v2ray.json
-
+caddy fmt /etc/caddy/Caddyfile --overwrite
 # start
 [[ "$TOREnable"      ==    "true" ]]    &&    tor &
 
