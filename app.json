@@ -21,7 +21,7 @@
         },
         "CADDYCONFIG": {
             "description": "Customize the network address to read the configuration and run CADDY, please do not modify it if you are not familiar with the CADDY configuration",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/Caddyfile"
+            "value": "https://raw.githubusercontent.com/euedeep/ukoreh-v2ray-trojan-gobs/master/etc/Caddyfile"
         },
         "ROBOTS": {
             "description": "The ROBOTS crawler rule switch, enabled by default, closed when modified to false",
@@ -85,7 +85,7 @@
         },
         "V2RAYCONFIG": {
             "description": "Customize the network address to read the configuration and run V2RAY, please do not modify it if you are not familiar with the V2RAY configuration",
-            "value": "https://raw.githubusercontent.com/mixool/kuhero/master/etc/v2ray.json"
+            "value": "https://raw.githubusercontent.com/euedeep/ukoreh-v2ray-trojan-gobs/master/etc/v2ray.json"
         }
     },
     "website": "https://github.com/euedeep/ukoreh-v2ray-trojan-gobs",
