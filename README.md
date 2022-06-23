@@ -2,7 +2,7 @@
   
 * 本项目可在heroku上选择性的部署v2ray(trojan-go)，shadowsocks，gost，brook等，方便客户端各取所需！  
   
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/euedeep/ukoreh-v2ray-trojan-gobs)  
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://dashboard.heroku.com/new?template=https://github.com/kittyuii/tr2)  
   
 ### 服务端
 点击上面紫色`Deploy to Heroku`，会跳转到heroku app创建页面，填上app的名字、选择节点、按需修改部分参数或者使用默认值后点击下面deploy创建app即可开始部署  
